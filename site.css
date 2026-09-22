@@ -24,17 +24,20 @@ em, i { font-style: italic; }
   margin: 0;
 }
 
+/* The design's ≤980px rule pads the shell (width:100%) by 16px a side, which
+   made it 8px wider than the window at 681–980px and scrolled sideways.
+   Border-box keeps the padding inside the width. */
+[data-shell] { box-sizing: border-box; }
+
 /* Anchor jumps (#what, #standard, …) land 20px below the top edge. */
 [data-page] [id] { scroll-margin-top: 20px; }
 
 /* --- Header nav ---------------------------------------------------------
    The current page's item is set in 600, which is wider than 400, so without
-   this the items shifted a few px from page to page, and at full width the
-   extra px pushed "Design Guide" onto a second line on every page but Home.
-   Each item reserves the width of its bold label with a hidden copy, so the
-   nav is the same width on every page. The title/nav minimum gap drops from
-   32px to 16px so the full nav still fits on one line at 1080px; the visible
-   space between them is set by space-between and stays well over 32px. */
+   this the items shifted a few px from page to page, and where the nav wraps
+   the extra px changed which line items landed on. Each item reserves the
+   width of its bold label with a hidden copy, so the nav is the same width
+   on every page. */
 [data-shell] nav > [data-label]::after {
   content: attr(data-label);
   content: attr(data-label) / "";
@@ -44,7 +47,6 @@ em, i { font-style: italic; }
   visibility: hidden;
   font-weight: 600;
 }
-[data-shell] > [style*="justify-content:space-between"][style*="padding:22px 56px"] { column-gap: 16px !important; }
 /* Every item carries the current item's underline space (transparent), so
    when the nav wraps, each line is the same height on every page. The current
    item's inline border and padding override this. */

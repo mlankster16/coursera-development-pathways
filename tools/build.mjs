@@ -59,10 +59,11 @@ function header(body) {
   body = body.replace(/<span style="color:#012169; font-weight:600; border-bottom:3px solid/, '<span aria-current="page" style="color:#012169; font-weight:600; border-bottom:3px solid');
   /* data-label lets site.css reserve each item's bold width, so the nav is
      the same width on every page whichever item is current */
-  body = body.replace(/<nav [\s\S]*?<\/nav>/, (nav) => nav.replace(
-    /<(a|span)([^>]*)>([^<]+)<\/\1>/g,
-    (m, tag, attrs, label) => /Design Guide/.test(label) ? m
-      : '<' + tag + attrs + ' data-label="' + label + '">' + label + '</' + tag + '>'));
+  body = body.replace(/<nav [\s\S]*?<\/nav>/, (nav) => nav
+    /* Design Guide is linked from each page's footer; it is not a nav item */
+    .replace(/\n<a href="https:\/\/mlankster16\.github\.io\/coursera-design-guide\/"[^>]*>Design Guide ↗<\/a>/, '')
+    .replace(/<(a|span)([^>]*)>([^<]+)<\/\1>/g,
+      (m, tag, attrs, label) => '<' + tag + attrs + ' data-label="' + label + '">' + label + '</' + tag + '>'));
   /* main landmark: from the hero to the end of the shell */
   body = body.replace(/\n\n(<div style="padding:72px 56px)/, '\n\n<main>\n$1');
   body = body.replace(/\n<\/div>\n<\/div>\s*$/, '\n</main>\n\n</div>\n</div>\n');
