@@ -118,7 +118,13 @@ async function flatten(page) {
   const style = helmet.slice(helmet.indexOf('<style>') + 7, helmet.lastIndexOf('</style>')).trimEnd();
 
   body = hoverClasses(body);
-  if (page.slug === 'find-your-pathway') { body = finder(body); body = faq(body); }
+  if (page.slug === 'find-your-pathway') {
+    body = finder(body); body = faq(body);
+    /* The design source has the footer 24px under the last FAQ hairline, so the
+       two rules nearly touch and the page reads as clipped. Match Home's 64px.
+       No-op once the source is corrected. */
+    body = body.replace(/(justify-content:space-between; )margin:24px 56px 56px;( padding-top:40px;)/, '$1margin:64px 56px 56px;$2');
+  }
   body = body.replace(/\s(hint-[\w-]+)="[^"]*"/g, '');
   body = body.replace(/<\/sc-if>/g, '</div>');
   body = body.replace(/href="([\w-]+)\.dc\.html(#[\w-]*)?"/g, (m, f, h) => 'href="' + f + '.html' + (h || '') + '"');

@@ -41,6 +41,10 @@ resolve.
   design's rule targets the shell rather than the sections. `site.css` applies
   the intended 24px, drops the beige page frame, wraps the header, and lets the
   Home hierarchy row wrap. Above 680px the pages match the designs exactly.
+- **Find Your Pathway footer spacing:** the design source sets the footer
+  24px below the FAQ, so its top rule nearly touches the last FAQ hairline.
+  The build raises it to 64px to match Home. Once the source is fixed, the
+  override does nothing.
 - **Accessibility:** FAQ triggers are real `<button>`s inside headings;
   finder focus moves to each new question; `nav`/`main` landmarks and
   `aria-current` on the current page; decorative arrows are `aria-hidden`, and
