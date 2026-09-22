@@ -45,6 +45,12 @@ resolve.
   24px below the FAQ, so its top rule nearly touches the last FAQ hairline.
   The build raises it to 64px to match Home. Once the source is fixed, the
   override does nothing.
+- **Header nav stays put:** in the design, the current page's bold label is
+  wider, so items shifted between pages and "Design Guide ↗" wrapped to a
+  second line on every page but Home. Each item now reserves its bold width,
+  every item carries the (transparent) underline space, and the title/nav
+  minimum gap is 16px instead of 32px, so the nav fits on one line at full
+  width and sits in the same place on every page at every width.
 - **Accessibility:** FAQ triggers are real `<button>`s inside headings;
   finder focus moves to each new question; `nav`/`main` landmarks and
   `aria-current` on the current page; decorative arrows are `aria-hidden`, and
