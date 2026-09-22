@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course Pathways — Coursera Development Pathways | Duke CTL</title>
+<meta name="description" content="Duke CTL’s starting point for faculty developing a Coursera Course or Specialization: how development works, how the work is shared, and which development pathway fits your project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+
+ body { margin:0; background:#EFEDE8; }
+ a { color:#00539B; }
+ a:hover { color:#125E3D; }
+ @media screen and (max-width: 980px) {
+   [data-shell] { padding:24px 16px !important; }
+ }
+ @media screen and (max-width: 820px) {
+   [data-shell] [style*="grid-template-columns"] { grid-template-columns:minmax(0,1fr) !important; }
+ }
+ @media screen and (max-width: 680px) {
+   [data-page] > div { padding-left:24px !important; padding-right:24px !important; }
+ }
+ :focus-visible{outline:2px solid #012169; outline-offset:2px;}
+</style>
+</head>
+<body>
+<div data-page="" style="font-family:'Open Sans',system-ui,sans-serif; padding:40px 24px; background:#EFEDE8;">
+<div data-shell="" style="max-width:1080px; width:100%; margin:0 auto; background:#FFFFFF; box-shadow:0 2px 40px rgba(1,33,105,.10); border-radius:3px;">
+
+<div style="display:flex; align-items:center; padding:16px 56px; background:#012169;">
+<img src="assets/ctl-logo-white.png" alt="Duke Learning Innovation and Lifetime Education — Center for Teaching and Learning" style="height:30px; width:auto; display:block;">
+</div>
+<div style="display:flex; align-items:center; justify-content:space-between; gap:32px; padding:22px 56px; border-bottom:1px solid #E4E2DD;">
+<a href="index.html" style="text-decoration:none; font-family:'EB Garamond',Garamond,serif; font-size:22px; color:#012169; letter-spacing:.01em; white-space:nowrap;">Coursera Development Pathways</a>
+<nav aria-label="Site" style="display:flex; align-items:center; justify-content:flex-end; gap:10px 24px; font-size:14px; letter-spacing:.02em; flex-wrap:wrap;">
+<a href="index.html" style="text-decoration:none; color:#5A6472; white-space:nowrap;">Home</a>
+<a href="find-your-pathway.html" style="text-decoration:none; color:#5A6472; white-space:nowrap;">Find Your Pathway</a>
+<a href="specialization-pathways.html" style="text-decoration:none; color:#5A6472; white-space:nowrap;">Specialization Pathways</a>
+<span aria-current="page" style="color:#012169; font-weight:600; border-bottom:3px solid #17724A; padding-bottom:3px; white-space:nowrap;">Course Pathways</span>
+<a href="https://mlankster16.github.io/coursera-design-guide/" target="_blank" rel="noopener" style="text-decoration:none; color:#00539B; font-weight:600; white-space:nowrap;">Design Guide <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+</nav>
+</div>
+
+<main>
+<div style="padding:72px 56px 48px; background:#FBFAF7;">
+<p style="margin:0 0 14px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#125E3D; font-weight:700;">Course Pathways</p>
+<h1 style="margin:0 0 20px; font-family:'EB Garamond',Garamond,serif; font-weight:500; font-size:50px; line-height:1.08; color:#012169; letter-spacing:-.01em; text-wrap:balance;">Choosing a development pathway</h1>
+<p style="margin:0 0 12px; font-size:20px; line-height:1.5; color:#3A424E; max-width:700px; text-wrap:pretty;">The right timeline depends on how ready your Course is when the project begins.</p>
+<p style="margin:0; font-size:16px; line-height:1.65; color:#5A6472; max-width:700px; text-wrap:pretty;">This page is a planning guide, not a formal scope of work. The CTL Digital Program Development Team will confirm your project's specific timeline and support needs.</p>
+</div>
+
+<div style="padding:48px 56px 0;">
+<div style="display:flex; flex-direction:column; gap:0; border-top:1px solid #E4E2DD;">
+
+<a href="#ready-to-publish" style="text-decoration:none; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 4px; border-bottom:1px solid #E4E2DD;" class="h6">
+ <span style="display:flex; align-items:center; gap:16px; min-width:0;">
+  <span aria-hidden="true" style="flex:none; display:flex; gap:3px;"><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span></span>
+  <span style="font-size:19px; font-weight:600; color:#1F2833;">Ready to publish</span>
+ </span>
+ <span style="flex:none; display:flex; align-items:center; gap:18px;"><span style="font-size:15px; color:#5A6472;">Approx. 4–6 weeks</span><span style="font-size:15px; color:#125E3D; font-weight:600;">Jump <span aria-hidden="true">↓</span></span></span>
+</a>
+
+<a href="#accelerated-existing" style="text-decoration:none; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 4px; border-bottom:1px solid #E4E2DD;" class="h6">
+ <span style="display:flex; align-items:center; gap:16px; min-width:0;">
+  <span aria-hidden="true" style="flex:none; display:flex; gap:3px;"><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span></span>
+  <span style="font-size:19px; font-weight:600; color:#1F2833;">Accelerated: existing content is ready</span>
+ </span>
+ <span style="flex:none; display:flex; align-items:center; gap:18px;"><span style="font-size:15px; color:#5A6472;">Approx. 3 months</span><span style="font-size:15px; color:#125E3D; font-weight:600;">Jump <span aria-hidden="true">↓</span></span></span>
+</a>
+
+<a href="#accelerated-plan" style="text-decoration:none; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 4px; border-bottom:1px solid #E4E2DD;" class="h6">
+ <span style="display:flex; align-items:center; gap:16px; min-width:0;">
+  <span aria-hidden="true" style="flex:none; display:flex; gap:3px;"><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span></span>
+  <span style="font-size:19px; font-weight:600; color:#1F2833;">Accelerated: learning plan is ready</span>
+ </span>
+ <span style="flex:none; display:flex; align-items:center; gap:18px;"><span style="font-size:15px; color:#5A6472;">Approx. 4 months</span><span style="font-size:15px; color:#125E3D; font-weight:600;">Jump <span aria-hidden="true">↓</span></span></span>
+</a>
+
+<a href="#standard" style="text-decoration:none; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 4px; border-bottom:1px solid #E4E2DD;" class="h6">
+ <span style="display:flex; align-items:center; gap:16px; min-width:0;">
+  <span aria-hidden="true" style="flex:none; display:flex; gap:3px;"><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#E4E2DD;"></span></span>
+  <span style="font-size:19px; font-weight:600; color:#1F2833;">Standard development</span>
+ </span>
+ <span style="flex:none; display:flex; align-items:center; gap:18px;"><span style="font-size:15px; color:#5A6472;">Approx. 6 months</span><span style="font-size:15px; color:#125E3D; font-weight:600;">Jump <span aria-hidden="true">↓</span></span></span>
+</a>
+
+<a href="#custom" style="text-decoration:none; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 4px; border-bottom:1px solid #E4E2DD;" class="h6">
+ <span style="display:flex; align-items:center; gap:16px; min-width:0;">
+  <span aria-hidden="true" style="flex:none; display:flex; gap:3px;"><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span><span style="width:8px; height:8px; border-radius:50%; background:#17724A;"></span></span>
+  <span style="font-size:19px; font-weight:600; color:#1F2833;">Custom development</span>
+ </span>
+ <span style="flex:none; display:flex; align-items:center; gap:18px;"><span style="font-size:15px; color:#5A6472;">Approx. 6+ months</span><span style="font-size:15px; color:#125E3D; font-weight:600;">Jump <span aria-hidden="true">↓</span></span></span>
+</a>
+</div>
+</div>
+
+<div style="margin:32px 56px 0; border:1px solid #C9CDD4; border-radius:3px; box-shadow:0 6px 20px rgba(1,33,105,.08);">
+ <div style="display:flex; align-items:center; gap:13px; padding:15px 24px; background:#F6F5F1; border-bottom:1px solid #C9CDD4;">
+  <svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" style="flex:none;"><circle cx="12" cy="12" r="8.6" fill="none" stroke="#5A6472" stroke-width="1.6"></circle><path d="M12 10.9v5.4M12 7.7v.1" fill="none" stroke="#5A6472" stroke-width="1.8" stroke-linecap="round"></path></svg>
+  <p style="margin:0; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#5A6472; font-weight:700;">Shared assumptions</p>
+ </div>
+ <div style="padding:22px 24px 24px;">
+  <p style="margin:0 0 14px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">The Ready to publish, Accelerated, and Standard pathways assume:</p>
+  <ul style="margin:0 0 14px; padding:0 0 0 20px; font-size:16px; line-height:1.7; color:#3A424E; max-width:730px;">
+   <li>The Course uses standard formats such as videos, readings, activities, and auto-graded assessments.</li>
+   <li>Faculty have an active role in developing and reviewing the content.</li>
+   <li>Faculty prepare scripts, slides, readings, and other source materials.</li>
+   <li>Slides and other visual materials are accessible and copyright-ready or can be revised within the project.</li>
+   <li>Copyright and accessibility questions can be resolved within the project.</li>
+   <li>The Course does not require complex tools, activities, integrations, or visual design.</li>
+   <li>There are no significant external requirements or multiple levels of review and approval.</li>
+  </ul>
+  <p style="margin:0; font-size:16px; line-height:1.7; color:#5A6472; max-width:730px;">These timelines are planning ranges rather than fixed commitments. A longer Course, larger scope, complex production needs, or additional review requirements may require more time.</p>
+ </div>
+</div>
+
+<div id="ready-to-publish" style="padding:72px 56px 8px;">
+ <div style="border-top:4px solid #17724A; padding-top:20px;">
+ <p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#125E3D; font-weight:700;">Approximately 4–6 weeks</p>
+ <h2 style="margin:0 0 18px; font-family:'EB Garamond',serif; font-weight:500; font-size:36px; color:#012169;">Ready to Publish</h2>
+ <p style="margin:0 0 20px; font-size:16px; line-height:1.6; color:#5A6472; max-width:730px;">The timeline below assumes a standard Course of approximately 2–8 hours of learner time, with 2–4 learning objectives and 3–6 Modules. Larger or more complex Courses may require additional time.</p>
+ <p style="margin:0 0 12px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">This pathway is a good fit if:</p>
+ <ul style="margin:0 0 28px; padding:0 0 0 20px; font-size:16px; line-height:1.7; color:#3A424E; max-width:730px;">
+  <li>Your Course content is complete and in good condition.</li>
+  <li>Your materials are already appropriate for the intended Coursera audience.</li>
+  <li>Scripts, slides, readings, activities, and assessments are ready to use.</li>
+  <li>Copyright, permissions, and ownership are clear.</li>
+  <li>Materials meet accessibility expectations or need only minor revisions.</li>
+  <li>The Course does not require substantial redesign or new content development.</li>
+ </ul>
+ <p style="margin:0 0 28px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">The main work is reviewing, building, QA, and preparing the Course for publication.</p>
+
+ <div style="display:flex; flex-direction:column; padding-left:2px; border-left:2px solid #CFE2D8;">
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Review, build, and publish</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll share your Course content with the Learning Experience team. We'll review the materials, flag any copyright, accessibility, or learner-experience concerns, and identify any final revisions needed before the build. You'll address requested changes while the Learning Experience team builds and reviews the Course in Coursera.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of this stage, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>Course content reviewed and ready for publication</li>
+    <li>Copyright and accessibility concerns addressed</li>
+    <li>A completed Course in Coursera</li>
+    <li>A Course submitted for publication</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 8px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#5A6472;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#1F2833;">Launch and after</p>
+   <p style="margin:0; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">Courses typically go live approximately seven days after submission, depending on Coursera's review process. After launch, the Learning Experience team will monitor initial learner feedback, share relevant notes with you, and respond to learner support needs and technical issues throughout the life of the Course.</p>
+  </div>
+ </div>
+ </div>
+</div>
+
+<div id="accelerated-existing" style="padding:64px 56px 8px;">
+ <div style="border-top:4px solid #17724A; padding-top:20px;">
+ <p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#125E3D; font-weight:700;">Approximately 3 months</p>
+ <h2 style="margin:0 0 18px; font-family:'EB Garamond',serif; font-weight:500; font-size:36px; color:#012169;">Accelerated: Existing Content Is Ready</h2>
+ <p style="margin:0 0 20px; font-size:16px; line-height:1.6; color:#5A6472; max-width:730px;">The timeline below assumes a standard Course of approximately 2–8 hours of learner time, with 2–4 learning objectives and 3–6 Modules. Larger or more complex Courses may require additional time.</p>
+ <p style="margin:0 0 12px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">This pathway is a good fit if:</p>
+ <ul style="margin:0 0 28px; padding:0 0 0 20px; font-size:16px; line-height:1.7; color:#3A424E; max-width:730px;">
+  <li>The Course is relatively short, typically two to six hours of learner time.</li>
+  <li>Most of the needed content already exists.</li>
+  <li>You are familiar with Coursera or online learning design.</li>
+  <li>Existing content is in reasonably good condition but needs reframing for a commercial learning platform.</li>
+  <li>You can prepare or revise scripts, slides, readings, activities, and assessments quickly.</li>
+  <li>Copyright and accessibility issues are limited and manageable.</li>
+  <li>The Course uses standard formats and does not require complex production.</li>
+ </ul>
+ <p style="margin:0 0 28px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">The main work is adapting existing content, filling small gaps, resolving copyright and accessibility needs, building the Course, and preparing it for launch.</p>
+
+ <div style="display:flex; flex-direction:column; padding-left:2px; border-left:2px solid #CFE2D8;">
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 1: Review, adapt, and define the Course</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#00447F; background:#F2F6FB; border:1px solid #D6E3F0; border-radius:20px; padding:5px 14px;">Overview <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">Together, we'll review your existing content and define how it can become a coherent Coursera learning experience. We'll identify how your existing materials can support the learning journey, what framing or context Coursera learners will need, any content gaps or materials that need to be developed, and copyright, accessibility, and platform-readiness concerns.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>A clear Course structure and learner journey</li>
+    <li>An inventory of existing materials and development needs</li>
+    <li>A plan for adapting materials for Coursera</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 2: Adapt and complete the Course content</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll work with the Learning Experience team to revise existing materials and develop any additional content needed to support the Course objectives — revising or reformatting existing materials, addressing copyright and accessibility needs, developing missing videos, activities, assessments, or readings, and finalizing Course and Module content for the Coursera build.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>Course content ready to build in Coursera</li>
+    <li>Materials adapted for the intended audience and platform</li>
+    <li>Remaining content, copyright, and accessibility questions resolved</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 3: Build, review, and prepare for launch</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">The Learning Experience team will complete the Course build in Coursera. You'll review the finished experience, finalize the Course landing page, and provide final sign-off. Courses typically go live approximately seven days after submission. The project team will close with a short debrief.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>A completed Course in Coursera</li>
+    <li>Finalized Course landing-page content</li>
+    <li>A Course submitted for publication</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 8px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#5A6472;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#1F2833;">Month 4 and beyond: Review and support</p>
+   <p style="margin:0; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">After launch, the Learning Experience team will monitor initial learner feedback, share relevant notes with you, and respond to learner support needs and technical issues throughout the life of the Course.</p>
+  </div>
+ </div>
+ </div>
+</div>
+
+<div id="accelerated-plan" style="padding:64px 56px 8px;">
+ <div style="border-top:4px solid #17724A; padding-top:20px;">
+ <p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#125E3D; font-weight:700;">Approximately 4 months</p>
+ <h2 style="margin:0 0 18px; font-family:'EB Garamond',serif; font-weight:500; font-size:36px; color:#012169;">Accelerated: The Learning Plan Is Ready</h2>
+ <p style="margin:0 0 20px; font-size:16px; line-height:1.6; color:#5A6472; max-width:730px;">The timeline below assumes a standard Course of approximately 2–8 hours of learner time, with 2–4 learning objectives and 3–6 Modules. Larger or more complex Courses may require additional time.</p>
+ <p style="margin:0 0 12px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">This pathway is a good fit if:</p>
+ <ul style="margin:0 0 28px; padding:0 0 0 20px; font-size:16px; line-height:1.7; color:#3A424E; max-width:730px;">
+  <li>The Course is relatively short, typically two to six hours of learner time.</li>
+  <li>You already have clear learning outcomes and a well-developed Course or Module plan.</li>
+  <li>You are familiar with Coursera or online learning design.</li>
+  <li>You are comfortable developing scripts, slides, and other source materials.</li>
+  <li>The main work is creating the Learning Assets identified in the plan.</li>
+  <li>You can make timely decisions and respond to feedback as assets are developed.</li>
+  <li>The Course uses standard formats and does not require complex production.</li>
+ </ul>
+ <p style="margin:0 0 28px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">The main work is developing a demonstration Module, establishing the development process, creating the remaining assets, building the Course, and preparing it for launch.</p>
+
+ <div style="display:flex; flex-direction:column; padding-left:2px; border-left:2px solid #CFE2D8;">
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 1: Confirm the plan and develop a demonstration Module</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#00447F; background:#F2F6FB; border:1px solid #D6E3F0; border-radius:20px; padding:5px 14px;">Overview <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll confirm the existing Course plan and focus on Learning Asset planning, script and slide design, and accessibility and copyright requirements. Using your existing Course plan, we'll develop a representative set of assets from one Module — several types of videos, activities, readings, or assessments — to confirm the development process, identify content gaps early, establish effective approaches, and give you detailed feedback before the remaining content is developed.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>One completed Module, or a strong working version</li>
+    <li>Examples of the main Learning Asset types in your Course</li>
+    <li>A clear process for developing the remaining content</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 2: Develop the next Module</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll finish any remaining work from the demonstration Module and develop another Module's worth of content. Light review and feedback will continue as each asset is created.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>A complete demonstration Module</li>
+    <li>A second completed Module</li>
+    <li>A tested process for reviewing and refining Learning Assets</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 3: Complete the remaining Modules</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll develop and finalize the remaining Modules, continuing to lead content development using the Design Guide and ongoing feedback from the Learning Experience team.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>All Course Modules developed</li>
+    <li>Learning Assets ready to be built into Coursera</li>
+    <li>Remaining content, copyright, accessibility, and production questions resolved</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 4: Build, review, and prepare for launch</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">The Learning Experience team will complete the Course build in Coursera. You'll review the finished experience, finalize the Course landing page, and provide final sign-off. Courses typically go live approximately seven days after submission. The project team will close with a short debrief.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>A completed Course in Coursera</li>
+    <li>Finalized Course landing-page content</li>
+    <li>A Course submitted for publication</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 8px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#5A6472;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#1F2833;">Month 5 and beyond: Review and support</p>
+   <p style="margin:0; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">After launch, the Learning Experience team will monitor initial learner feedback, share relevant notes with you, and respond to learner support needs and technical issues throughout the life of the Course.</p>
+  </div>
+ </div>
+ </div>
+</div>
+
+<div id="standard" style="padding:64px 56px 8px;">
+ <div style="border-top:4px solid #17724A; padding-top:20px;">
+ <p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#125E3D; font-weight:700;">Approximately 6 months</p>
+ <h2 style="margin:0 0 18px; font-family:'EB Garamond',serif; font-weight:500; font-size:36px; color:#012169;">Standard Development</h2>
+ <p style="margin:0 0 20px; font-size:16px; line-height:1.6; color:#5A6472; max-width:730px;">The timeline below assumes a standard Course of approximately 2–8 hours of learner time, with 2–4 learning objectives and 3–6 Modules. Larger or more complex Courses may require additional time. This is the baseline Course development process.</p>
+ <p style="margin:0 0 12px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">This pathway is a good fit if:</p>
+ <ul style="margin:0 0 28px; padding:0 0 0 20px; font-size:16px; line-height:1.7; color:#3A424E; max-width:730px;">
+  <li>You have limited Coursera or online learning experience.</li>
+  <li>You have little existing source content to adapt.</li>
+  <li>The Course needs meaningful support with learning objectives, Course structure, Module design, and Learning Asset planning.</li>
+  <li>You are willing to develop scripts, slides, and other source materials with guidance.</li>
+  <li>The Course uses standard formats and does not require complex production.</li>
+  <li>The Course can be developed without significant external review or approval requirements.</li>
+ </ul>
+ <p style="margin:0 0 28px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">Your Learning Experience Designer will guide you through each stage, while you remain the subject-matter expert and primary content author.</p>
+
+ <div style="display:flex; flex-direction:column; padding-left:2px; border-left:2px solid #CFE2D8;">
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 1: Orient and define the Course</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#00447F; background:#F2F6FB; border:1px solid #D6E3F0; border-radius:20px; padding:5px 14px;">Overview <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll become familiar with Coursera, review examples, and begin shaping the Course for a broad online audience. Together, we'll clarify what learners should be able to do and what they will need in order to get there.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>A completed Course section of the Design Template</li>
+    <li>A clear set of Course learning objectives</li>
+    <li>An initial list of existing materials, development needs, questions, and ideas</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 2: Plan the Modules and Learning Assets</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll organize the Course into Modules and plan how learners will move through each one. Working backward from the learning objectives, you'll identify the videos, readings, activities, assessments, and other Learning Assets that may be needed.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>A complete map of the Course's Modules</li>
+    <li>A plan for the learning experience in each Module</li>
+    <li>An initial list of Learning Assets to develop</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 3: Develop a demonstration Module</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll develop a representative set of assets from one Module to test the process and establish a shared approach for the rest of the Course. This stage helps the team identify content gaps, clarify production needs, and give you detailed feedback on scripts, slides, activities, and other materials before development continues.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>One completed Module, or a strong working version</li>
+    <li>Examples of the main Learning Asset types in your Course</li>
+    <li>A clearer process for developing the remaining content</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 4: Continue Module development</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll finish any remaining work from the demonstration Module and develop another Module's worth of content. Learning Experience Design, media production, and faculty review will continue alongside development.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>A complete demonstration Module</li>
+    <li>A second completed Module</li>
+    <li>A tested process for reviewing and refining each Learning Asset</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 5: Complete the Course content</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#5A3F87; background:#F6F3FA; border:1px solid #E3DBF0; border-radius:20px; padding:5px 14px;">Module design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Learning Assets <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">You'll develop and finalize the remaining Modules, continuing to lead content development using the Design Guide and ongoing feedback from the Learning Experience team.</p>
+   <p style="margin:0 0 6px; font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.04em;">By the end of the month, you'll have</p>
+   <ul style="margin:0; padding:0 0 0 20px; font-size:15px; line-height:1.65; color:#4A5361; max-width:700px;">
+    <li>All Course Modules developed</li>
+    <li>Learning Assets ready to be built into Coursera</li>
+    <li>Remaining content, copyright, accessibility, and production questions resolved</li>
+   </ul>
+  </div>
+  <div style="position:relative; padding:0 0 28px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#17724A;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#012169;">Month 6: Build, review, and prepare for launch</p>
+   <div style="display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;">
+    <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#125E3D; background:#F0F6F2; border:1px solid #CFE2D8; border-radius:20px; padding:5px 14px;">Course design <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <a href="https://mlankster16.github.io/coursera-design-guide/accessibility-copyright-ai/" target="_blank" rel="noopener" style="text-decoration:none; font-size:14px; font-weight:600; color:#8A5A0B; background:#FCF7EE; border:1px solid #F0E4CB; border-radius:20px; padding:5px 14px;">Accessibility, Copyright, and AI <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+   </div>
+   <p style="margin:0 0 14px; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">The Learning Experience team will complete the Course build in Coursera. You'll review the finished experience, help finalize the Course landing page, and provide final sign-off. The Course will then be submitted for publication and will typically go live approximately seven days later. The project team will close with a short debrief.</p>
+  </div>
+  <div style="position:relative; padding:0 0 8px 30px;">
+   <span style="position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:#5A6472;"></span>
+   <p style="margin:0 0 6px; font-size:19px; font-weight:600; color:#1F2833;">Month 7 and beyond: Review and support</p>
+   <p style="margin:0; font-size:16px; line-height:1.7; color:#3A424E; max-width:700px;">After launch, the Learning Experience team will monitor initial learner feedback, share relevant notes with you, and respond to learner support needs and technical issues throughout the life of the Course.</p>
+  </div>
+ </div>
+ </div>
+</div>
+
+<div id="custom" style="padding:64px 56px 8px;">
+ <div style="border-top:4px solid #C84E00; padding-top:20px;">
+ <p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#A84200; font-weight:700;">Approximately 6+ months</p>
+ <h2 style="margin:0 0 18px; font-family:'EB Garamond',serif; font-weight:500; font-size:36px; color:#012169;">Custom Development</h2>
+ <p style="margin:0 0 20px; font-size:16px; line-height:1.6; color:#5A6472; max-width:730px;">The timeline below assumes a standard Course of approximately 2–8 hours of learner time, with 2–4 learning objectives and 3–6 Modules. Larger or more complex Courses may require additional time. Custom Courses may fall outside this typical structure — the team will work with you to define the appropriate scope, learner time, number of Modules, and Learning Assets.</p>
+ <p style="margin:0 0 12px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">A Course may require a custom timeline when the standard pathway assumptions do not apply. This pathway is a good fit if:</p>
+ <ul style="margin:0 0 28px; padding:0 0 0 20px; font-size:16px; line-height:1.7; color:#3A424E; max-width:730px;">
+  <li>The Course needs continuing education or another formal review process.</li>
+  <li>The Course must meet grant, accreditation, or other external requirements.</li>
+  <li>The project requires multiple levels of stakeholder review or approval.</li>
+  <li>The Course begins with an idea that needs substantial development.</li>
+  <li>The project requires significant pedagogical or curriculum support.</li>
+  <li>The Course includes complex videos, activities, tools, integrations, or visual design.</li>
+  <li>Faculty need substantial support developing scripts, slides, or other source materials.</li>
+  <li>The Course is longer or substantially larger than the standard Course model.</li>
+  <li>The project includes other requirements that may affect the development process or timeline.</li>
+ </ul>
+ <p style="margin:0 0 24px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">Custom projects may include additional planning, consultation, co-design, media production, visual design, accessibility review, stakeholder review, or platform testing.</p>
+
+ <div style="border:1px solid #EFD3C6; background:#FCF5F0; border-radius:3px; padding:24px 26px; margin:0 0 20px;">
+  <p style="margin:0 0 12px; font-size:15px; font-weight:700; color:#A84200; letter-spacing:.02em;">A tailored process — the Learning Experience team will work with you to define</p>
+  <ul style="margin:0; padding:0 0 0 20px; font-size:16px; line-height:1.7; color:#3A424E;">
+   <li>The Course's learning goals and scope</li>
+   <li>The level of design and development support needed</li>
+   <li>The content and media production plan</li>
+   <li>The review, approval, and sign-off process</li>
+   <li>The timeline and major milestones</li>
+   <li>The roles and responsibilities of everyone involved</li>
+  </ul>
+ </div>
+ <p style="margin:0 0 8px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">The Course may still use the Coursera Design Guide, but the team will identify which sections and resources are most relevant to the project. The timeline will be developed around the Course's specific needs — a custom Course may take six months or longer to complete.</p>
+ <p style="margin:0; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">Throughout development, you will remain the subject-matter expert and primary content author unless the project scope establishes a different arrangement. The Learning Experience team will help coordinate the process, provide design and platform expertise, and support the Course through development, review, and launch.</p>
+ </div>
+</div>
+
+<div style="display:flex; align-items:flex-start; justify-content:space-between; margin:60px 56px 56px; padding-top:40px; border-top:1px solid #E4E2DD; gap:24px; flex-wrap:wrap;">
+ <a href="find-your-pathway.html" style="text-decoration:none; display:flex; flex-direction:column; gap:6px;"><span style="font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#5A6472; font-weight:700;"><span aria-hidden="true">←</span> Back to</span><span style="font-family:'EB Garamond',serif; font-size:22px; color:#00539B;">Find your pathway</span></a>
+ <a href="specialization-pathways.html" style="text-decoration:none; display:flex; flex-direction:column; gap:6px; text-align:right;"><span style="font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#5A6472; font-weight:700;">Building a series?</span><span style="font-family:'EB Garamond',serif; font-size:22px; color:#00539B;">Specialization Pathways <span aria-hidden="true">→</span></span></a>
+</div>
+
+</main>
+
+</div>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

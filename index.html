@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coursera Development Pathways | Duke CTL</title>
+<meta name="description" content="Duke CTL’s starting point for faculty developing a Coursera Course or Specialization: how development works, how the work is shared, and which development pathway fits your project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+
+ body { margin:0; background:#EFEDE8; }
+ a { color:#00539B; }
+ a:hover { color:#125E3D; }
+ @media screen and (max-width: 980px) {
+   [data-shell] { padding:24px 16px !important; }
+ }
+ @media screen and (max-width: 820px) {
+   [data-shell] [style*="grid-template-columns"] { grid-template-columns:minmax(0,1fr) !important; }
+ }
+ @media screen and (max-width: 680px) {
+   [data-page] > div { padding-left:24px !important; padding-right:24px !important; }
+ }
+ :focus-visible{outline:2px solid #012169; outline-offset:2px;}
+</style>
+</head>
+<body>
+<div data-page="" style="font-family:'Open Sans',system-ui,sans-serif; padding:40px 24px; background:#EFEDE8;">
+<div data-shell="" style="max-width:1080px; width:100%; margin:0 auto; background:#FFFFFF; box-shadow:0 2px 40px rgba(1,33,105,.10); border-radius:3px;">
+
+<div style="display:flex; align-items:center; padding:16px 56px; background:#012169;">
+<img src="assets/ctl-logo-white.png" alt="Duke Learning Innovation and Lifetime Education — Center for Teaching and Learning" style="height:30px; width:auto; display:block;">
+</div>
+<div style="display:flex; align-items:center; justify-content:space-between; gap:32px; padding:22px 56px; border-bottom:1px solid #E4E2DD;">
+<span style="font-family:'EB Garamond',Garamond,serif; font-size:22px; color:#012169; letter-spacing:.01em; white-space:nowrap;">Coursera Development Pathways</span>
+<nav aria-label="Site" style="display:flex; align-items:center; justify-content:flex-end; gap:10px 24px; font-size:14px; letter-spacing:.02em; flex-wrap:wrap;">
+<span aria-current="page" style="color:#012169; font-weight:600; border-bottom:3px solid #339898; padding-bottom:3px; white-space:nowrap;">Home</span>
+<a href="find-your-pathway.html" style="text-decoration:none; color:#5A6472; white-space:nowrap;">Find Your Pathway</a>
+<a href="specialization-pathways.html" style="text-decoration:none; color:#5A6472; white-space:nowrap;">Specialization Pathways</a>
+<a href="course-pathways.html" style="text-decoration:none; color:#5A6472; white-space:nowrap;">Course Pathways</a>
+<a href="https://mlankster16.github.io/coursera-design-guide/" target="_blank" rel="noopener" style="text-decoration:none; color:#00539B; font-weight:600; white-space:nowrap;">Design Guide <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+</nav>
+</div>
+
+<main>
+<div style="padding:72px 56px 56px; background:#FBFAF7;">
+<p style="margin:0 0 14px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#1D6B6B; font-weight:700;">Start here</p>
+<h1 style="margin:0 0 24px; font-family:'EB Garamond',Garamond,serif; font-weight:500; font-size:50px; line-height:1.08; color:#012169; letter-spacing:-.01em; text-wrap:balance;">Developing a Coursera learning experience with Duke CTL</h1>
+<p style="margin:0 0 36px; font-size:17px; line-height:1.65; color:#3A424E; max-width:730px; text-wrap:pretty;">If you're considering a Coursera Course or Specialization, this is the place to begin. This guide explains what a Coursera learning experience includes, what development involves, how faculty and the CTL Design Team share the work, and which development pathway may fit your project. It's a planning guide, not a formal scope of work.</p>
+<div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px;">
+ <a href="#what" style="text-decoration:none; display:flex; flex-direction:column; gap:6px; padding:14px 0 0; border-top:3px solid #012169;" class="h1">
+  <span style="font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.1em;">01</span>
+  <span style="font-size:16px; font-weight:600; color:#012169;">What you'll build</span>
+ </a>
+ <a href="#process" style="text-decoration:none; display:flex; flex-direction:column; gap:6px; padding:14px 0 0; border-top:3px solid #C9CDD4;" class="h1">
+  <span style="font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.1em;">02</span>
+  <span style="font-size:16px; font-weight:600; color:#012169;">What development looks like</span>
+ </a>
+ <a href="#roles" style="text-decoration:none; display:flex; flex-direction:column; gap:6px; padding:14px 0 0; border-top:3px solid #C9CDD4;" class="h1">
+  <span style="font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.1em;">03</span>
+  <span style="font-size:16px; font-weight:600; color:#012169;">How we share the work</span>
+ </a>
+ <a href="find-your-pathway.html" style="text-decoration:none; display:flex; flex-direction:column; gap:6px; padding:14px 0 0; border-top:3px solid #C9CDD4;" class="h1">
+  <span style="font-size:14px; font-weight:700; color:#5A6472; letter-spacing:.1em;">04</span>
+  <span style="font-size:16px; font-weight:600; color:#012169;">Find your pathway <span aria-hidden="true">→</span></span>
+ </a>
+</div>
+</div>
+
+<div id="what" style="padding:72px 56px 0;">
+<p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#5A6472; font-weight:700;">01 · What you'll build</p>
+<h2 style="margin:0 0 14px; font-family:'EB Garamond',serif; font-weight:500; font-size:40px; line-height:1.1; color:#012169;">How a Coursera learning experience fits together</h2>
+<p style="margin:0 0 36px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px; text-wrap:pretty;">Coursera learning experiences are built in nested layers. A Specialization is made of Courses, each Course is made of Modules, and each Module is made of Learning Assets. You may develop a full Specialization or a single Course.</p>
+
+<div style="border:1px solid #C9CDD4; border-radius:3px; box-shadow:0 6px 20px rgba(1,33,105,.08); background:#FFFFFF; padding:32px 32px 28px;">
+
+ <div style="display:grid; grid-template-columns:200px minmax(0,1fr); gap:28px; align-items:center;">
+  <div>
+   <p style="margin:0 0 4px; font-size:20px; font-weight:600; color:#00447F;">Specialization</p>
+   <p style="margin:0 0 8px; font-size:14px; line-height:1.5; color:#4A5361;">3–6 Courses · 8–48 hours of learner time</p>
+   <a href="https://mlankster16.github.io/coursera-design-guide/specialization/" target="_blank" rel="noopener" style="font-size:14px; font-weight:600; color:#00539B; text-decoration:none;">Specialization guide <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+  </div>
+  <div style="border-left:4px solid #00539B; background:#F2F6FB; border-radius:0 3px 3px 0; padding:22px 24px;">
+   <div style="display:flex; align-items:flex-start;">
+    <div style="flex:none; display:flex; flex-direction:column; align-items:center; gap:6px; width:60px;">
+     <div style="width:40px; height:40px; border-radius:50%; background:#00539B; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-family:'EB Garamond',serif; font-size:18px;">1</div>
+     <span style="font-size:14px; color:#4A5361;">Course</span>
+    </div>
+    <div style="flex:1 1 auto; height:2px; background:#BCD0E8; margin-top:20px;"></div>
+    <div style="flex:none; display:flex; flex-direction:column; align-items:center; gap:6px; width:60px;">
+     <div style="width:40px; height:40px; border-radius:50%; background:#17724A; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-family:'EB Garamond',serif; font-size:18px; box-shadow:0 0 0 4px #CFE2D8;">2</div>
+     <span style="font-size:14px; color:#125E3D; font-weight:600;">Course</span>
+    </div>
+    <div style="flex:1 1 auto; height:2px; background:#BCD0E8; margin-top:20px;"></div>
+    <div style="flex:none; display:flex; flex-direction:column; align-items:center; gap:6px; width:60px;">
+     <div style="width:40px; height:40px; border-radius:50%; background:#00539B; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-family:'EB Garamond',serif; font-size:18px;">3</div>
+     <span style="font-size:14px; color:#4A5361;">Course</span>
+    </div>
+    <div style="flex:1 1 auto; height:0; border-top:2px dashed #BCD0E8; margin-top:21px;"></div>
+    <div style="flex:none; display:flex; flex-direction:column; align-items:center; gap:6px; width:60px;">
+     <div style="width:36px; height:36px; margin-top:2px; border-radius:50%; border:2px dashed #BCD0E8; color:#5A6472; display:flex; align-items:center; justify-content:center; font-size:18px;">⋯</div>
+     <span style="font-size:14px; color:#4A5361;">up to 6</span>
+    </div>
+    <div style="flex:1 1 auto; height:2px; background:#BCD0E8; margin-top:20px;"></div>
+    <div style="flex:none; display:flex; flex-direction:column; align-items:center; gap:6px; width:76px;">
+     <div style="width:44px; height:44px; margin-top:-2px; border-radius:50%; background:#B4700C; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="9.4" r="4.6" fill="none" stroke="#FFFFFF" stroke-width="1.7"></circle><path d="M9 13.2l-1.7 7.3 4.7-2.3 4.7 2.3-1.7-7.3" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"></path></svg></div>
+     <span style="font-size:14px; color:#8A5A0B; font-weight:600;">Certificate</span>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <div style="display:grid; grid-template-columns:200px minmax(0,1fr); gap:28px;">
+  <div></div>
+  <div style="display:flex; align-items:center; gap:10px; padding:10px 0 10px 24px; font-size:14px; color:#5A6472;">
+   <svg viewBox="0 0 16 24" width="12" height="18" aria-hidden="true"><path d="M8 0v20M3 15l5 5 5-5" fill="none" stroke="#9AA3AE" stroke-width="1.6"></path></svg>
+   <span>Each Course contains</span>
+  </div>
+ </div>
+
+ <div style="display:grid; grid-template-columns:200px minmax(0,1fr); gap:28px; align-items:center;">
+  <div>
+   <p style="margin:0 0 4px; font-size:20px; font-weight:600; color:#125E3D;">Course</p>
+   <p style="margin:0 0 8px; font-size:14px; line-height:1.5; color:#4A5361;">2–4 learning objectives · 3–6 Modules · 2–8 hours</p>
+   <a href="https://mlankster16.github.io/coursera-design-guide/course/" target="_blank" rel="noopener" style="font-size:14px; font-weight:600; color:#125E3D; text-decoration:none;">Course guide <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+  </div>
+  <div style="border-left:4px solid #17724A; background:#F0F6F2; border-radius:0 3px 3px 0; padding:22px 24px;">
+   <div style="display:flex; gap:10px; flex-wrap:wrap;">
+    <div style="flex:1 1 90px; background:#FFFFFF; border:1px solid #CFE2D8; border-radius:3px; padding:10px 12px; font-size:14px; font-weight:600; color:#1F2833;">Module 1</div>
+    <div style="flex:1 1 90px; background:#5A3F87; border:1px solid #5A3F87; border-radius:3px; padding:10px 12px; font-size:14px; font-weight:600; color:#FFFFFF;">Module 2</div>
+    <div style="flex:1 1 90px; background:#FFFFFF; border:1px solid #CFE2D8; border-radius:3px; padding:10px 12px; font-size:14px; font-weight:600; color:#1F2833;">Module 3</div>
+    <div style="flex:1 1 90px; background:transparent; border:1px dashed #9FB8AB; border-radius:3px; padding:10px 12px; font-size:14px; color:#4A5361;">up to 6</div>
+   </div>
+   <p style="margin:12px 0 0; font-size:14px; color:#4A5361;">Learning objectives define what learners should be able to do; Modules organize the learning into manageable sections.</p>
+  </div>
+ </div>
+
+ <div style="display:grid; grid-template-columns:200px minmax(0,1fr); gap:28px;">
+  <div></div>
+  <div style="display:flex; align-items:center; gap:10px; padding:10px 0 10px 24px; font-size:14px; color:#5A6472;">
+   <svg viewBox="0 0 16 24" width="12" height="18" aria-hidden="true"><path d="M8 0v20M3 15l5 5 5-5" fill="none" stroke="#9AA3AE" stroke-width="1.6"></path></svg>
+   <span>Each Module contains</span>
+  </div>
+ </div>
+
+ <div style="display:grid; grid-template-columns:200px minmax(0,1fr); gap:28px; align-items:center;">
+  <div>
+   <p style="margin:0 0 4px; font-size:20px; font-weight:600; color:#5A3F87;">Module</p>
+   <p style="margin:0 0 8px; font-size:14px; line-height:1.5; color:#4A5361;">~10 Learning Assets · 30 minutes–2 hours</p>
+   <a href="https://mlankster16.github.io/coursera-design-guide/module/" target="_blank" rel="noopener" style="font-size:14px; font-weight:600; color:#5A3F87; text-decoration:none;">Module guide <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+  </div>
+  <div style="border-left:4px solid #5A3F87; background:#F6F3FA; border-radius:0 3px 3px 0; padding:22px 24px;">
+   <div style="display:flex; gap:8px; flex-wrap:wrap;">
+    <div title="Video" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2" fill="none" stroke="#5A3F87" stroke-width="1.6"></rect><path d="M10.3 9.3l5.4 2.9-5.4 2.9z" fill="#5A3F87"></path></svg></div>
+    <div title="Reading" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 6.6c-1.9-1.4-4.3-1.8-6.6-1.2v12.1c2.3-.6 4.7-.2 6.6 1.1 1.9-1.3 4.3-1.7 6.6-1.1V5.4c-2.3-.6-4.7-.2-6.6 1.2z" fill="none" stroke="#5A3F87" stroke-width="1.6" stroke-linejoin="round"></path></svg></div>
+    <div title="Video" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2" fill="none" stroke="#5A3F87" stroke-width="1.6"></rect><path d="M10.3 9.3l5.4 2.9-5.4 2.9z" fill="#5A3F87"></path></svg></div>
+    <div title="Practice" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.6" fill="none" stroke="#5A3F87" stroke-width="1.6"></circle><circle cx="12" cy="12" r="4.2" fill="none" stroke="#5A3F87" stroke-width="1.6"></circle><circle cx="12" cy="12" r="1.2" fill="#5A3F87"></circle></svg></div>
+    <div title="Video" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2" fill="none" stroke="#5A3F87" stroke-width="1.6"></rect><path d="M10.3 9.3l5.4 2.9-5.4 2.9z" fill="#5A3F87"></path></svg></div>
+    <div title="Reading" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 6.6c-1.9-1.4-4.3-1.8-6.6-1.2v12.1c2.3-.6 4.7-.2 6.6 1.1 1.9-1.3 4.3-1.7 6.6-1.1V5.4c-2.3-.6-4.7-.2-6.6 1.2z" fill="none" stroke="#5A3F87" stroke-width="1.6" stroke-linejoin="round"></path></svg></div>
+    <div title="Practice" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.6" fill="none" stroke="#5A3F87" stroke-width="1.6"></circle><circle cx="12" cy="12" r="4.2" fill="none" stroke="#5A3F87" stroke-width="1.6"></circle><circle cx="12" cy="12" r="1.2" fill="#5A3F87"></circle></svg></div>
+    <div title="Video" style="width:40px; height:40px; background:#FFFFFF; border:1px solid #E3DBF0; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2" fill="none" stroke="#5A3F87" stroke-width="1.6"></rect><path d="M10.3 9.3l5.4 2.9-5.4 2.9z" fill="#5A3F87"></path></svg></div>
+    <div title="Assessment" style="width:40px; height:40px; background:#B4700C; border:1px solid #B4700C; border-radius:3px; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="5.5" y="4.5" width="13" height="16" rx="1.6" fill="none" stroke="#FFFFFF" stroke-width="1.6"></rect><path d="M9 9h6M9 13h6M9 17h3.5" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"></path></svg></div>
+   </div>
+   <p style="margin:12px 0 0; font-size:14px; color:#4A5361;">A sequence of Learning Assets that moves learners toward the Module's goal.</p>
+  </div>
+ </div>
+
+ <div style="display:grid; grid-template-columns:200px minmax(0,1fr); gap:28px;">
+  <div></div>
+  <div style="display:flex; align-items:center; gap:10px; padding:10px 0 10px 24px; font-size:14px; color:#5A6472;">
+   <svg viewBox="0 0 16 24" width="12" height="18" aria-hidden="true"><path d="M8 0v20M3 15l5 5 5-5" fill="none" stroke="#9AA3AE" stroke-width="1.6"></path></svg>
+   <span>Learning Assets include</span>
+  </div>
+ </div>
+
+ <div style="display:grid; grid-template-columns:200px minmax(0,1fr); gap:28px; align-items:center;">
+  <div>
+   <p style="margin:0 0 4px; font-size:20px; font-weight:600; color:#8A5A0B;">Learning Assets</p>
+   <p style="margin:0 0 8px; font-size:14px; line-height:1.5; color:#4A5361;">Videos, readings, practice, and assessments</p>
+   <a href="https://mlankster16.github.io/coursera-design-guide/learning-assets/" target="_blank" rel="noopener" style="font-size:14px; font-weight:600; color:#8A5A0B; text-decoration:none;">Learning Assets guide <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+  </div>
+  <div style="border-left:4px solid #B4700C; background:#FCF7EE; border-radius:0 3px 3px 0; padding:18px 24px;">
+   <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 24px;">
+    <div style="display:flex; gap:10px; align-items:flex-start;">
+     <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="flex:none; margin-top:1px;"><rect x="3.5" y="5" width="17" height="14" rx="2" fill="none" stroke="#8A5A0B" stroke-width="1.6"></rect><path d="M10.3 9.3l5.4 2.9-5.4 2.9z" fill="#8A5A0B"></path></svg>
+     <p style="margin:0; font-size:14px; line-height:1.5; color:#3A424E;"><strong style="color:#1F2833;">Videos</strong> explain key ideas, demonstrate processes, or introduce examples</p>
+    </div>
+    <div style="display:flex; gap:10px; align-items:flex-start;">
+     <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="flex:none; margin-top:1px;"><path d="M12 6.6c-1.9-1.4-4.3-1.8-6.6-1.2v12.1c2.3-.6 4.7-.2 6.6 1.1 1.9-1.3 4.3-1.7 6.6-1.1V5.4c-2.3-.6-4.7-.2-6.6 1.2z" fill="none" stroke="#8A5A0B" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+     <p style="margin:0; font-size:14px; line-height:1.5; color:#3A424E;"><strong style="color:#1F2833;">Readings</strong> and other resources provide additional information or context</p>
+    </div>
+    <div style="display:flex; gap:10px; align-items:flex-start;">
+     <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="flex:none; margin-top:1px;"><circle cx="12" cy="12" r="8.6" fill="none" stroke="#8A5A0B" stroke-width="1.6"></circle><circle cx="12" cy="12" r="4.2" fill="none" stroke="#8A5A0B" stroke-width="1.6"></circle><circle cx="12" cy="12" r="1.2" fill="#8A5A0B"></circle></svg>
+     <p style="margin:0; font-size:14px; line-height:1.5; color:#3A424E;"><strong style="color:#1F2833;">Practice activities</strong> help learners apply what they are learning</p>
+    </div>
+    <div style="display:flex; gap:10px; align-items:flex-start;">
+     <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="flex:none; margin-top:1px;"><rect x="5.5" y="4.5" width="13" height="16" rx="1.6" fill="none" stroke="#8A5A0B" stroke-width="1.6"></rect><path d="M9 9h6M9 13h6M9 17h3.5" fill="none" stroke="#8A5A0B" stroke-width="1.5" stroke-linecap="round"></path></svg>
+     <p style="margin:0; font-size:14px; line-height:1.5; color:#3A424E;"><strong style="color:#1F2833;">Auto-graded assessments</strong> give learners opportunities to check their understanding</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="padding:64px 56px 0;">
+<h3 style="margin:0 0 10px; font-family:'EB Garamond',serif; font-weight:500; font-size:30px; color:#012169;">How your teaching maps to Coursera</h3>
+<p style="margin:0 0 28px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px;">If you teach at Duke, you already work with these layers. Each one answers a different planning question.</p>
+<div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr); gap:24px; padding:0 0 12px; border-bottom:2px solid #012169;">
+ <p style="margin:0; font-size:15px; font-weight:700; color:#4A5361;">Planning question</p>
+ <p style="margin:0; font-size:15px; font-weight:700; color:#012169;">Your Duke course</p>
+ <p style="margin:0; font-size:15px; font-weight:700; color:#012169;">Your Coursera experience</p>
+</div>
+<div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr); gap:24px; align-items:center; padding:20px 0; border-bottom:1px solid #E4E2DD;">
+ <p style="margin:0; font-size:16px; line-height:1.55; color:#3A424E;">What larger goal are learners working toward?</p>
+ <div><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#012169;">Your whole course</p><p style="margin:0; font-size:15px; color:#5A6472;">A semester of material</p></div>
+ <div style="border-left:4px solid #00539B; background:#F2F6FB; padding:14px 18px; border-radius:0 3px 3px 0;"><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#00447F;">A Specialization</p><p style="margin:0; font-size:15px; color:#4A5361;">3–6 Courses · 8–48 hours of learner time</p></div>
+</div>
+<div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr); gap:24px; align-items:center; padding:20px 0; border-bottom:1px solid #E4E2DD;">
+ <p style="margin:0; font-size:16px; line-height:1.55; color:#3A424E;">What meaningful skills should learners develop?</p>
+ <div><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#012169;">A unit or theme</p><p style="margin:0; font-size:15px; color:#5A6472;">Often several weeks of your syllabus</p></div>
+ <div style="border-left:4px solid #17724A; background:#F0F6F2; padding:14px 18px; border-radius:0 3px 3px 0;"><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#125E3D;">A Course</p><p style="margin:0; font-size:15px; color:#4A5361;">3–6 Modules · 2–8 hours of learner time</p></div>
+</div>
+<div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr); gap:24px; align-items:center; padding:20px 0; border-bottom:1px solid #E4E2DD;">
+ <p style="margin:0; font-size:16px; line-height:1.55; color:#3A424E;">What smaller learning steps will help learners get there?</p>
+ <div><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#012169;">A topic inside that unit</p><p style="margin:0; font-size:15px; color:#5A6472;">A concept, method, or skill</p></div>
+ <div style="border-left:4px solid #5A3F87; background:#F6F3FA; padding:14px 18px; border-radius:0 3px 3px 0;"><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#5A3F87;">A Module</p><p style="margin:0; font-size:15px; color:#4A5361;">~10 Learning Assets · 30 minutes–2 hours of learner time</p></div>
+</div>
+<div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr); gap:24px; align-items:center; padding:20px 0; border-bottom:1px solid #E4E2DD;">
+ <p style="margin:0; font-size:16px; line-height:1.55; color:#3A424E;">What experience will best support each step?</p>
+ <div><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#012169;">A lecture, reading, activity, or assessment</p><p style="margin:0; font-size:15px; color:#5A6472;">The pieces you already have</p></div>
+ <div style="border-left:4px solid #B4700C; background:#FCF7EE; padding:14px 18px; border-radius:0 3px 3px 0;"><p style="margin:0 0 4px; font-size:18px; font-weight:600; color:#8A5A0B;">Learning Assets</p><p style="margin:0; font-size:15px; color:#4A5361;">Video, reading, activity, quiz</p></div>
+</div>
+</div>
+
+
+
+<div id="process" style="padding:80px 56px 0;">
+<p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#5A6472; font-weight:700;">02 · What development looks like</p>
+<h2 style="margin:0 0 14px; font-family:'EB Garamond',serif; font-weight:500; font-size:40px; line-height:1.1; color:#012169;">From idea to launch</h2>
+<p style="margin:0 0 36px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px; text-wrap:pretty;">Most projects move through the same general stages. Where your project begins, and how much time each stage needs, depends on how ready your content is. That's what the development pathways describe.</p>
+
+<div style="display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:0;">
+ <div style="display:flex; flex-direction:column;">
+  <div style="display:flex; align-items:center;"><div style="flex:none; width:36px; height:36px; border-radius:50%; background:#012169; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">1</div><div style="flex:1; height:2px; background:#C9CDD4;"></div></div>
+  <div style="padding:16px 18px 0 0;">
+   <p style="margin:0 0 6px; font-size:17px; font-weight:600; color:#012169;">Define</p>
+   <p style="margin:0; font-size:14px; line-height:1.6; color:#4A5361;">Clarify who the learners are and what they should be able to do.</p>
+  </div>
+ </div>
+ <div style="display:flex; flex-direction:column;">
+  <div style="display:flex; align-items:center;"><div style="flex:none; width:36px; height:36px; border-radius:50%; background:#012169; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">2</div><div style="flex:1; height:2px; background:#C9CDD4;"></div></div>
+  <div style="padding:16px 18px 0 0;">
+   <p style="margin:0 0 6px; font-size:17px; font-weight:600; color:#012169;">Plan</p>
+   <p style="margin:0; font-size:14px; line-height:1.6; color:#4A5361;">Organize the learning into Courses and Modules and identify the Learning Assets needed.</p>
+  </div>
+ </div>
+ <div style="display:flex; flex-direction:column;">
+  <div style="display:flex; align-items:center;"><div style="flex:none; width:36px; height:36px; border-radius:50%; background:#012169; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">3</div><div style="flex:1; height:2px; background:#C9CDD4;"></div></div>
+  <div style="padding:16px 18px 0 0;">
+   <p style="margin:0 0 6px; font-size:17px; font-weight:600; color:#012169;">Develop</p>
+   <p style="margin:0; font-size:14px; line-height:1.6; color:#4A5361;">Prepare scripts, slides, readings, activities, and assessments, often starting with a demonstration Module.</p>
+  </div>
+ </div>
+ <div style="display:flex; flex-direction:column;">
+  <div style="display:flex; align-items:center;"><div style="flex:none; width:36px; height:36px; border-radius:50%; background:#012169; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">4</div><div style="flex:1; height:2px; background:#C9CDD4;"></div></div>
+  <div style="padding:16px 18px 0 0;">
+   <p style="margin:0 0 6px; font-size:17px; font-weight:600; color:#012169;">Build and review</p>
+   <p style="margin:0; font-size:14px; line-height:1.6; color:#4A5361;">CTL builds and QAs the experience in Coursera. Faculty review and provide final sign-off.</p>
+  </div>
+ </div>
+ <div style="display:flex; flex-direction:column;">
+  <div style="display:flex; align-items:center;"><div style="flex:none; width:36px; height:36px; border-radius:50%; background:#17724A; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:700;">5</div></div>
+  <div style="padding:16px 0 0 0;">
+   <p style="margin:0 0 6px; font-size:17px; font-weight:600; color:#012169;">Launch and support</p>
+   <p style="margin:0; font-size:14px; line-height:1.6; color:#4A5361;">Content typically goes live about seven days after submission. CTL monitors learner feedback and support needs.</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div id="roles" style="padding:80px 56px 0;">
+<p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#5A6472; font-weight:700;">03 · How we share the work</p>
+<h2 style="margin:0 0 14px; font-family:'EB Garamond',serif; font-weight:500; font-size:40px; line-height:1.1; color:#012169;">Faculty and the CTL Design Team</h2>
+<p style="margin:0 0 32px; font-size:17px; line-height:1.7; color:#3A424E; max-width:730px; text-wrap:pretty;">You bring the subject-matter expertise and remain the primary content author. The CTL Design Team helps shape the learning experience and prepares it for Coursera.</p>
+<div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px;">
+ <div style="border:1px solid #C9CDD4; border-radius:3px; overflow:hidden;">
+  <div style="display:flex; align-items:center; gap:12px; padding:16px 24px; background:#012169;">
+   <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="#FFFFFF" stroke-width="1.6"></circle><path d="M4.5 20c.8-3.9 3.8-6 7.5-6s6.7 2.1 7.5 6" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"></path></svg>
+   <p style="margin:0; font-size:16px; font-weight:700; color:#FFFFFF;">As faculty, you will typically</p>
+  </div>
+  <ul style="margin:0; padding:20px 26px 22px 44px; font-size:16px; line-height:1.75; color:#3A424E;">
+   <li>Define and confirm the purpose of the Course or Specialization</li>
+   <li>Identify the learners you hope to serve</li>
+   <li>Confirm what learners should be able to do by the end</li>
+   <li>Provide or develop the content</li>
+   <li>Prepare scripts, slides, readings, activities, assessments, and projects</li>
+   <li>Review feedback and make content decisions</li>
+   <li>Confirm that the final experience is accurate and aligned with your goals</li>
+   <li>Review and approve the experience before it is submitted to Coursera</li>
+  </ul>
+ </div>
+ <div style="border:1px solid #C9CDD4; border-radius:3px; overflow:hidden;">
+  <div style="display:flex; align-items:center; gap:12px; padding:16px 24px; background:#F6F5F1; border-bottom:1px solid #C9CDD4;">
+   <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="8" cy="9" r="3" fill="none" stroke="#012169" stroke-width="1.6"></circle><circle cx="16" cy="9" r="3" fill="none" stroke="#012169" stroke-width="1.6"></circle><path d="M2.8 19c.6-3 2.6-4.6 5.2-4.6s4.6 1.6 5.2 4.6M10.8 19c.6-3 2.6-4.6 5.2-4.6s4.6 1.6 5.2 4.6" fill="none" stroke="#012169" stroke-width="1.6" stroke-linecap="round"></path></svg>
+   <p style="margin:0; font-size:16px; font-weight:700; color:#012169;">The CTL Design Team will help you</p>
+  </div>
+  <ul style="margin:0; padding:20px 26px 22px 44px; font-size:16px; line-height:1.75; color:#3A424E;">
+   <li>Translate your teaching expertise into an online learning experience</li>
+   <li>Plan the Specialization, Course, Module, and Learning Asset structure</li>
+   <li>Support decisions about sequencing and learner progression</li>
+   <li>Provide guidance on learning design, accessibility, and copyright</li>
+   <li>Review and refine content as it is developed</li>
+   <li>Build and QA the experience in Coursera</li>
+   <li>Monitor learner feedback and support needs after launch</li>
+  </ul>
+ </div>
+</div>
+</div>
+
+<div style="padding:80px 56px 0;">
+<div style="background:#012169; border-radius:3px; padding:44px 44px 40px; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:36px; align-items:center;">
+ <div>
+  <p style="margin:0 0 10px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#BCD0E8; font-weight:700;">04 · Find your pathway</p>
+  <h2 style="margin:0 0 14px; font-family:'EB Garamond',serif; font-weight:500; font-size:36px; line-height:1.12; color:#FFFFFF;">Which development pathway fits your project?</h2>
+  <p style="margin:0; font-size:16px; line-height:1.65; color:#E4EAF3;">Answer a few questions for a starting recommendation, compare pathway timelines, and read common questions.</p>
+ </div>
+ <div style="display:flex; flex-direction:column; gap:12px;">
+  <a href="find-your-pathway.html" style="text-decoration:none; display:block; text-align:center; background:#FFFFFF; color:#012169; font-size:16px; font-weight:700; padding:14px 22px; border-radius:3px;" class="h2">Find your pathway <span aria-hidden="true">→</span></a>
+  <a href="specialization-pathways.html" style="text-decoration:none; display:block; text-align:center; border:1px solid #6F86B8; color:#FFFFFF; font-size:15px; font-weight:600; padding:12px 22px; border-radius:3px;" class="h3">Specialization Pathways</a>
+  <a href="course-pathways.html" style="text-decoration:none; display:block; text-align:center; border:1px solid #6F86B8; color:#FFFFFF; font-size:15px; font-weight:600; padding:12px 22px; border-radius:3px;" class="h3">Course Pathways</a>
+ </div>
+</div>
+</div>
+
+<div style="display:flex; align-items:flex-start; justify-content:space-between; margin:64px 56px 56px; padding-top:40px; border-top:1px solid #E4E2DD; gap:24px; flex-wrap:wrap;">
+ <p style="margin:0; font-size:15px; line-height:1.6; color:#5A6472; max-width:560px;">Once a project begins, the Coursera Design Guide supports the detailed design work for each Specialization, Course, Module, and Learning Asset.</p>
+ <a href="https://mlankster16.github.io/coursera-design-guide/" target="_blank" rel="noopener" style="text-decoration:none; display:flex; flex-direction:column; gap:6px; text-align:right;"><span style="font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:#5A6472; font-weight:700; white-space:nowrap;">Already in development?</span><span style="font-family:'EB Garamond',serif; font-size:22px; color:#00539B; white-space:nowrap;">Coursera Design Guide <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></span></a>
+</div>
+
+</main>
+
+</div>
+</div>
+<script src="site.js"></script>
+</body>
+</html>
